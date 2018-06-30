@@ -1,5 +1,5 @@
 <?php
-include 'App//controller//indexController.php';
+include 'App//controller//homeController.php';
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -21,9 +21,9 @@ class Route {
     }
     
     public function initRoutes(){
-        $this->routes['/'] = array ('controller' => 'indexController', 'action' => 'index');
-        $this->routes['/lista'] = array ('controller' => 'indexController', 'action' => 'lista');
-        $this->routes['/conteudo'] = array ('controller' => 'indexController', 'action' => 'conteudo');
+        $this->routes['/'] = array ('controller' => 'homeController', 'action' => 'index');
+        $this->routes['/lista'] = array ('controller' => 'homeController', 'action' => 'lista');
+        $this->routes['/conteudo'] = array ('controller' => 'homeController', 'action' => 'conteudo');
     }
     
     protected function run($url){

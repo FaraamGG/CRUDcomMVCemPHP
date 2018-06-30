@@ -7,12 +7,14 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>CRUD PHP</title>
     </head>
-    <body>
-        teste
+    <body><p>Página HTML</p>
+        <p>Main content area</p>
+        <hr>            
         <?php
-        echo 'teste teste';
+        $this->content();
         ?>
+        <hr>
     </body>
 </html>
